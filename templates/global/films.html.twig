@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Films - Movie Explorer{% endblock %}
+
+{% block body %}
+<h1>{{ titre }}</h1>
+<ul>
+    {% for film in films %}
+        <li>{{ film.titre }} — {{ film.annee }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
